@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мои Ссылки - Резюме</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Языковой переключатель -->
+    <div class="language-switcher">
+        <button class="lang-btn active" data-lang="ru">RU</button>
+        <button class="lang-btn" data-lang="en">EN</button>
+        <button class="lang-btn" data-lang="de">DE</button>
+    </div>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <div class="logo">
+                    <h2 data-i18n="site-title">Portfolio</h2>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link" data-i18n="nav-home">Главная</a></li>
+                    <li><a href="links.html" class="nav-link active" data-i18n="nav-links">Ссылки</a></li>
+                    <li><a href="files.html" class="nav-link" data-i18n="nav-files">Файлы</a></li>
+                    <li><a href="contacts.html" class="nav-link" data-i18n="nav-contacts">Контакты</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="page-header">
+            <div class="container">
+                <h1 data-i18n="links-page-title">Мои Профили и Ссылки</h1>
+                <p data-i18n="links-page-subtitle">Следите за моей деятельностью в социальных сетях и профессиональных платформах</p>
+            </div>
+        </section>
+
+        <section class="links-section">
+            <div class="container">
+                <div class="links-grid">
+                    <div class="link-card professional">
+                        <div class="link-icon">
+                            <i class="fab fa-linkedin"></i>
+                        </div>
+                        <div class="link-content">
+                            <h3 data-i18n="linkedin-title">LinkedIn</h3>
+                            <p data-i18n="linkedin-desc">Профессиональная сеть для карьерного роста</p>
+                            <a href="https://linkedin.com/in/yourprofile" target="_blank" class="link-button">
+                                <i class="fas fa-external-link-alt"></i> <span data-i18n="go-to-link">Перейти</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="link-card professional">
+                        <div class="link-icon">
+                            <i class="fab fa-github"></i>
+                        </div>
+                        <div class="link-content">
+                            <h3 data-i18n="github-title">GitHub</h3>
+                            <p data-i18n="github-desc">Мои проекты и исходный код</p>
+                            <a href="https://github.com/yourusername" target="_blank" class="link-button">
+                                <i class="fas fa-external-link-alt"></i> Перейти
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="link-card social">
+                        <div class="link-icon">
+                            <i class="fab fa-telegram"></i>
+                        </div>
+                        <div class="link-content">
+                            <h3 data-i18n="telegram-title">Telegram</h3>
+                            <p data-i18n="telegram-desc">Для быстрой связи и обсуждения проектов</p>
+                            <a href="https://t.me/yourusername" target="_blank" class="link-button">
+                                <i class="fas fa-external-link-alt"></i> Перейти
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="link-card social">
+                        <div class="link-icon">
+                            <i class="fab fa-twitter"></i>
+                        </div>
+                        <div class="link-content">
+                            <h3 data-i18n="twitter-title">Twitter</h3>
+                            <p data-i18n="twitter-desc">Мысли и новости из IT-мира</p>
+                            <a href="https://twitter.com/yourusername" target="_blank" class="link-button">
+                                <i class="fas fa-external-link-alt"></i> Перейти
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="link-card professional">
+                        <div class="link-icon">
+                            <i class="fab fa-codepen"></i>
+                        </div>
+                        <div class="link-content">
+                            <h3 data-i18n="codepen-title">CodePen</h3>
+                            <p data-i18n="codepen-desc">Эксперименты с кодом и фронтенд</p>
+                            <a href="https://codepen.io/yourusername" target="_blank" class="link-button">
+                                <i class="fas fa-external-link-alt"></i> <span data-i18n="go-to-link">Перейти</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 data-i18n="footer-contacts-title">Контакты</h3>
+                    <p><i class="fas fa-envelope"></i> email@example.com</p>
+                    <p><i class="fas fa-phone"></i> +49 1782673024</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Munchen, Germany</p>
+                </div>
+                <div class="footer-section">
+                    <h3 data-i18n="footer-social-title">Социальные сети</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3 data-i18n="footer-nav-title">Навигация</h3>
+                    <ul>
+                        <li><a href="index.html" data-i18n="nav-home">Главная</a></li>
+                        <li><a href="links.html" data-i18n="nav-links">Ссылки</a></li>
+                        <li><a href="files.html" data-i18n="nav-files">Файлы</a></li>
+                        <li><a href="contacts.html" data-i18n="nav-contacts">Контакты</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

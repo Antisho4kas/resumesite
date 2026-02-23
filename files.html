@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Файлы - Резюме</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Языковой переключатель -->
+    <div class="language-switcher">
+        <button class="lang-btn active" data-lang="ru">RU</button>
+        <button class="lang-btn" data-lang="en">EN</button>
+        <button class="lang-btn" data-lang="de">DE</button>
+    </div>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <div class="logo">
+                    <h2 data-i18n="site-title">Portfolio</h2>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link" data-i18n="nav-home">Главная</a></li>
+                    <li><a href="links.html" class="nav-link" data-i18n="nav-links">Ссылки</a></li>
+                    <li><a href="files.html" class="nav-link active" data-i18n="nav-files">Файлы</a></li>
+                    <li><a href="contacts.html" class="nav-link" data-i18n="nav-contacts">Контакты</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="page-header">
+            <div class="container">
+                <h1 data-i18n="files-page-title">Документы и Файлы</h1>
+                <p data-i18n="files-page-subtitle">Здесь вы можете скачать мои резюме, сертификаты и другие важные документы</p>
+            </div>
+        </section>
+
+        <section class="files-section">
+            <div class="container">
+                <div class="files-categories">
+                    <div class="category-section">
+                        <h2><i class="fas fa-file-pdf"></i> Резюме</h2>
+                        <div class="files-grid">
+                            <div class="file-card">
+                                <div class="file-icon">
+                                    <i class="fas fa-file-pdf"></i>
+                                </div>
+                                <div class="file-info">
+                                    <h3>Резюме (PDF)</h3>
+                                    <p>Полное резюме на русском языке</p>
+                                    <div class="file-meta">
+                                        <span class="file-size">245 КБ</span>
+                                        <span class="file-date">Обновлено: 15.02.2024</span>
+                                    </div>
+                                    <button class="download-btn">
+                                        <i class="fas fa-download"></i> Скачать
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="file-card">
+                                <div class="file-icon">
+                                    <i class="fas fa-file-word"></i>
+                                </div>
+                                <div class="file-info">
+                                    <h3>Резюме (DOCX)</h3>
+                                    <p>Резюме в формате Word для редактирования</p>
+                                    <div class="file-meta">
+                                        <span class="file-size">189 КБ</span>
+                                        <span class="file-date">Обновлено: 15.02.2024</span>
+                                    </div>
+                                    <button class="download-btn">
+                                        <i class="fas fa-download"></i> Скачать
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="file-card">
+                                <div class="file-icon">
+                                    <i class="fas fa-file-alt"></i>
+                                </div>
+                                <div class="file-info">
+                                    <h3>Резюме (English)</h3>
+                                    <p>Resume in English version</p>
+                                    <div class="file-meta">
+                                        <span class="file-size">238 КБ</span>
+                                        <span class="file-date">Обновлено: 15.02.2024</span>
+                                    </div>
+                                    <button class="download-btn">
+                                        <i class="fas fa-download"></i> Скачать
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="category-section">
+                        <h2><i class="fas fa-certificate"></i> Сертификаты и Дипломы</h2>
+                        <div class="files-grid">
+                            <div class="file-card">
+                                <div class="file-icon">
+                                    <i class="fas fa-certificate"></i>
+                                </div>
+                                <div class="file-info">
+                                    <h3>Сертификат Python Developer</h3>
+                                    <p>Сертификат о прохождении курса Python</p>
+                                    <div class="file-meta">
+                                        <span class="file-size">1.2 МБ</span>
+                                        <span class="file-date">10.01.2024</span>
+                                    </div>
+                                    <button class="download-btn">
+                                        <i class="fas fa-download"></i> Скачать
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="file-card">
+                                <div class="file-icon">
+                                    <i class="fas fa-graduation-cap"></i>
+                                </div>
+                                <div class="file-info">
+                                    <h3>Диплом о высшем образовании</h3>
+                                    <p>Диплом бакалавра</p>
+                                    <div class="file-meta">
+                                        <span class="file-size">2.5 МБ</span>
+                                        <span class="file-date">20.06.2023</span>
+                                    </div>
+                                    <button class="download-btn">
+                                        <i class="fas fa-download"></i> Скачать
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="file-card">
+                                <div class="file-icon">
+                                    <i class="fas fa-award"></i>
+                                </div>
+                                <div class="file-info">
+                                    <h3>Сертификат AWS Cloud</h3>
+                                    <p>AWS Certified Cloud Practitioner</p>
+                                    <div class="file-meta">
+                                        <span class="file-size">890 КБ</span>
+                                        <span class="file-date">05.12.2023</span>
+                                    </div>
+                                    <button class="download-btn">
+                                        <i class="fas fa-download"></i> Скачать
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="category-section">
+                        <h2><i class="fas fa-chart-line"></i> Отчеты и Проекты</h2>
+                        <div class="files-grid">
+                            <div class="file-card">
+                                <div class="file-icon">
+                                    <i class="fas fa-file-powerpoint"></i>
+                                </div>
+                                <div class="file-info">
+                                    <h3>Презентация проекта X</h3>
+                                    <p>Презентация успешного проекта</p>
+                                    <div class="file-meta">
+                                        <span class="file-size">5.6 МБ</span>
+                                        <span class="file-date">01.02.2024</span>
+                                    </div>
+                                    <button class="download-btn">
+                                        <i class="fas fa-download"></i> Скачать
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="file-card">
+                                <div class="file-icon">
+                                    <i class="fas fa-file-excel"></i>
+                                </div>
+                                <div class="file-info">
+                                    <h3>Аналитический отчет</h3>
+                                    <p>Отчет по результатам анализа</p>
+                                    <div class="file-meta">
+                                        <span class="file-size">1.8 МБ</span>
+                                        <span class="file-date">15.01.2024</span>
+                                    </div>
+                                    <button class="download-btn">
+                                        <i class="fas fa-download"></i> Скачать
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="file-card">
+                                <div class="file-icon">
+                                    <i class="fas fa-file-archive"></i>
+                                </div>
+                                <div class="file-info">
+                                    <h3>Портфолио проектов</h3>
+                                    <p>Архив с примерами работ</p>
+                                    <div class="file-meta">
+                                        <span class="file-size">12.3 МБ</span>
+                                        <span class="file-date">20.01.2024</span>
+                                    </div>
+                                    <button class="download-btn">
+                                        <i class="fas fa-download"></i> Скачать
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="download-all-section">
+                    <h2><i class="fas fa-download"></i> Скачать все файлы</h2>
+                    <p>Полный архив со всеми документами</p>
+                    <button class="btn btn-primary">
+                        <i class="fas fa-archive"></i> Скачать весь архив
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 data-i18n="footer-contacts-title">Контакты</h3>
+                    <p><i class="fas fa-envelope"></i> email@example.com</p>
+                    <p><i class="fas fa-phone"></i> +49 1782673024</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Munchen, Germany</p>
+                </div>
+                <div class="footer-section">
+                    <h3 data-i18n="footer-social-title">Социальные сети</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3 data-i18n="footer-nav-title">Навигация</h3>
+                    <ul>
+                        <li><a href="index.html" data-i18n="nav-home">Главная</a></li>
+                        <li><a href="links.html" data-i18n="nav-links">Ссылки</a></li>
+                        <li><a href="files.html" data-i18n="nav-files">Файлы</a></li>
+                        <li><a href="contacts.html" data-i18n="nav-contacts">Контакты</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

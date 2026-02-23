@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты - Резюме</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Языковой переключатель -->
+    <div class="language-switcher">
+        <button class="lang-btn active" data-lang="ru">RU</button>
+        <button class="lang-btn" data-lang="en">EN</button>
+        <button class="lang-btn" data-lang="de">DE</button>
+    </div>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <div class="logo">
+                    <h2 data-i18n="site-title">Portfolio</h2>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link" data-i18n="nav-home">Главная</a></li>
+                    <li><a href="links.html" class="nav-link" data-i18n="nav-links">Ссылки</a></li>
+                    <li><a href="files.html" class="nav-link" data-i18n="nav-files">Файлы</a></li>
+                    <li><a href="contacts.html" class="nav-link active" data-i18n="nav-contacts">Контакты</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="page-header">
+            <div class="container">
+                <h1 data-i18n="contacts-page-title">Свяжитесь со мной</h1>
+                <p data-i18n="contacts-page-subtitle">Я всегда открыт для новых возможностей и интересных проектов</p>
+            </div>
+        </section>
+
+        <section class="contact-section">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <h2>Контактная информация</h2>
+                        <div class="contact-items">
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h3>Email</h3>
+                                    <p>email@example.com</p>
+                                    <a href="mailto:email@example.com" class="contact-link">Написать письмо</a>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h3 data-i18n="contact-phone">Телефон</h3>
+                                    <p>+49 1782673024</p>
+                                    <a href="tel:+491782673024" class="contact-link" data-i18n="contact-call">Позвонить</a>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h3 data-i18n="contact-address">Адрес</h3>
+                                    <p>Munchen, Germany</p>
+                                    <a href="#" class="contact-link" data-i18n="contact-show-map">Показать на карте</a>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fab fa-telegram"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h3>Telegram</h3>
+                                    <p>@yourusername</p>
+                                    <a href="https://t.me/yourusername" class="contact-link">Написать в Telegram</a>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fab fa-whatsapp"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h3 data-i18n="contact-whatsapp">WhatsApp</h3>
+                                    <p>+49 1782673024</p>
+                                    <a href="https://wa.me/491782673024" class="contact-link" data-i18n="contact-whatsapp-action">Написать в WhatsApp</a>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fab fa-linkedin"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h3>LinkedIn</h3>
+                                    <p>linkedin.com/in/yourprofile</p>
+                                    <a href="https://linkedin.com/in/yourprofile" class="contact-link">Перейти в профиль</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-form">
+                        <h2>Отправить сообщение</h2>
+                        <form class="form">
+                            <div class="form-group">
+                                <label for="name">Ваше имя *</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Ваш email *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="subject">Тема сообщения *</label>
+                                <input type="text" id="subject" name="subject" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">Сообщение *</label>
+                                <textarea id="message" name="message" rows="6" required></textarea>
+                            </div>
+
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-primary">
+                                    <i class="fas fa-paper-plane"></i> Отправить сообщение
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="map-section">
+                    <h2><i class="fas fa-map"></i> Местоположение</h2>
+                    <div class="map-placeholder">
+                        <i class="fas fa-map-marked-alt"></i>
+                        <p>Здесь будет интерактивная карта</p>
+                        <small>Москва, Россия</small>
+                    </div>
+                </div>
+
+                <div class="working-hours">
+                    <h2><i class="fas fa-clock"></i> Время работы</h2>
+                    <div class="hours-grid">
+                        <div class="hours-item">
+                            <span class="day">Понедельник - Пятница</span>
+                            <span class="time">9:00 - 18:00</span>
+                        </div>
+                        <div class="hours-item">
+                            <span class="day">Суббота</span>
+                            <span class="time">10:00 - 15:00</span>
+                        </div>
+                        <div class="hours-item">
+                            <span class="day">Воскресенье</span>
+                            <span class="time">Выходной</span>
+                        </div>
+                    </div>
+                    <p class="timezone">Часовой пояс: Moscow Time (UTC+3)</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 data-i18n="footer-contacts-title">Контакты</h3>
+                    <p><i class="fas fa-envelope"></i> email@example.com</p>
+                    <p><i class="fas fa-phone"></i> +49 1782673024</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Munchen, Germany</p>
+                </div>
+                <div class="footer-section">
+                    <h3 data-i18n="footer-social-title">Социальные сети</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3 data-i18n="footer-nav-title">Навигация</h3>
+                    <ul>
+                        <li><a href="index.html" data-i18n="nav-home">Главная</a></li>
+                        <li><a href="links.html" data-i18n="nav-links">Ссылки</a></li>
+                        <li><a href="files.html" data-i18n="nav-files">Файлы</a></li>
+                        <li><a href="contacts.html" data-i18n="nav-contacts">Контакты</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
